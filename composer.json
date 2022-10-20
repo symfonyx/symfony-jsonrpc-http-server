@@ -26,7 +26,7 @@
     }
   },
   "suggest": {
-    "yoanm/symfony-jsonrpc-params-validator": "Symfony bundle for easy JSON-RPC params validation",
+    "symfonyx/symfony-jsonrpc-params-validator": "Symfony bundle for easy JSON-RPC params validation",
     "yoanm/symfony-jsonrpc-http-server-doc": "JSON-RPC documentation Bundle"
   },
   "require": {
@@ -38,7 +38,7 @@
     "symfony/event-dispatcher-contracts": "^1.0 || ^2.0",
     "symfony/http-foundation": "^4.4 || ^5.3",
     "symfony/http-kernel": "^4.4 || ^5.3",
-    "yoanm/jsonrpc-server-sdk": "^3.0"
+    "symfonyx/jsonrpc-server-sdk": "dev-master"
   },
   "require-dev": {
     "behat/behat": "~3.0",
