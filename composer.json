@@ -13,6 +13,12 @@
       "role": "Developer"
     }
   ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/symfonyx/php-jsonrpc-server-sdk.git"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "Yoanm\\SymfonyJsonRpcHttpServer\\": "src"
@@ -26,7 +32,7 @@
     }
   },
   "suggest": {
-    "symfonyx/symfony-jsonrpc-params-validator": "Symfony bundle for easy JSON-RPC params validation",
+    "yoanm/symfony-jsonrpc-params-validator": "Symfony bundle for easy JSON-RPC params validation",
     "yoanm/symfony-jsonrpc-http-server-doc": "JSON-RPC documentation Bundle"
   },
   "require": {
