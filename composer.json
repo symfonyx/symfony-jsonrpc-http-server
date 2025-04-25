@@ -33,7 +33,7 @@
   },
   "suggest": {
     "symfonyx/symfony-jsonrpc-params-validator": "Symfony bundle for easy JSON-RPC params validation",
-    "symfonyx/symfony-jsonrpc-http-server-doc": "JSON-RPC documentation Bundle"
+    "yoanm/symfony-jsonrpc-http-server-doc": "JSON-RPC documentation Bundle"
   },
   "require": {
     "php": "^8.0",
