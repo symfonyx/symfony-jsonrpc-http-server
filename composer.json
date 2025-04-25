@@ -32,31 +32,33 @@
     }
   },
   "suggest": {
-    "yoanm/symfony-jsonrpc-params-validator": "Symfony bundle for easy JSON-RPC params validation",
-    "yoanm/symfony-jsonrpc-http-server-doc": "JSON-RPC documentation Bundle"
+    "symfonyx/symfony-jsonrpc-params-validator": "Symfony bundle for easy JSON-RPC params validation",
+    "symfonyx/symfony-jsonrpc-http-server-doc": "JSON-RPC documentation Bundle"
   },
   "require": {
-    "php": "^7.3 || ^8.0",
+    "php": "^8.0",
     "psr/container": "^1.0",
-    "symfony/config": "^4.4 || ^5.3",
-    "symfony/dependency-injection": "^4.4 || ^5.3",
-    "symfony/event-dispatcher": "^4.4 || ^5.3",
-    "symfony/event-dispatcher-contracts": "^1.0 || ^2.0",
-    "symfony/http-foundation": "^4.4 || ^5.3",
-    "symfony/http-kernel": "^4.4 || ^5.3",
-    "symfonyx/jsonrpc-server-sdk": "dev-master"
+    "symfony/config": "^4.4 || ^5.4 || ^6.0",
+    "symfony/dependency-injection": "^4.4 || ^5.4 || ^6.0",
+    "symfony/event-dispatcher": "^4.4 || ^5.4 || ^6.0",
+    "symfony/event-dispatcher-contracts": "^1.0 || ^2.0 || ^3.0",
+    "symfony/http-foundation": "^4.4 || ^5.4 || ^6.0",
+    "symfony/http-kernel": "^4.4 || ^5.4 || ^6.0",
+    "symfonyx/jsonrpc-server-sdk": "^3.3"
   },
   "require-dev": {
-    "behat/behat": "~3.0",
-    "squizlabs/php_codesniffer": "3.*",
-    "phpunit/phpunit": "^8.0 || ^9.0",
-    "matthiasnoback/symfony-dependency-injection-test": "^3.0 || ^4.0",
-    "matthiasnoback/symfony-config-test": "^3.0 || ^4.0",
-    "symfony/framework-bundle": "^4.4 || ^5.3",
-    "symfony/routing": "^4.4 || ^5.3",
-    "yoanm/php-unit-extended": "~1.0",
+    "behat/behat": "^3.9.0",
+    "dvdoug/behat-code-coverage": "^5.0",
+    "matthiasnoback/symfony-config-test": "^4.0",
+    "matthiasnoback/symfony-dependency-injection-test": "^4.0",
+    "phpspec/prophecy": "^1.15",
     "phpspec/prophecy-phpunit": "^2.0",
-    "dvdoug/behat-code-coverage": "^5.0"
+    "phpunit/php-code-coverage": "^9.2.4",
+    "phpunit/phpunit": "^9.0",
+    "squizlabs/php_codesniffer": "^3.5",
+    "symfony/framework-bundle": "^4.4 || ^5.4 || ^6.0",
+    "symfony/routing": "^4.4 || ^5.4 || ^6.0",
+    "yoanm/php-unit-extended": "^2.0"
   },
   "config": {
     "sort-packages": true

@@ -31,7 +31,7 @@ abstract class AbstractKernel extends BaseHttpKernel
     /**
      * {@inheritdoc}
      */
-    public function getCacheDir()
+    public function getCacheDir(): string
     {
         // Use a specific cache for each kernels
         if (null === $this->customCacheDir) {
@@ -44,7 +44,7 @@ abstract class AbstractKernel extends BaseHttpKernel
     /**
      * {@inheritdoc}
      */
-    public function getLogDir()
+    public function getLogDir(): string
     {
         return $this->getProjectDir().'/var/log';
     }
@@ -52,9 +52,14 @@ abstract class AbstractKernel extends BaseHttpKernel
     /**
      * {@inheritdoc}
      */
-    public function getProjectDir()
+    public function getProjectDir(): string
     {
         return realpath(__DIR__.'/../');
+    }
+
+    public function getConfigDir(): string
+    {
+        return $this->getProjectDir().'/'.$this->getConfigDirectoryName();
     }
 
     /**
@@ -69,7 +74,7 @@ abstract class AbstractKernel extends BaseHttpKernel
             $routes->import($confDir . '/routes' . self::CONFIG_EXTS, '/', 'glob');
         }
     }
-    
+
     /**
      * {@inheritdoc}
      */
@@ -86,12 +91,11 @@ abstract class AbstractKernel extends BaseHttpKernel
      *
      * @return string The container class
      */
-    protected function getContainerClass()
+    protected function getContainerClass(): string
     {
         // In order to avoid collisions between kernels use a dedicated name
         return parent::getContainerClass().Container::camelize($this->getConfigDirectoryName());
     }
 
     abstract public function getConfigDirectoryName() : string;
-    abstract public function getConfigDir(): string;
 }
