@@ -44,7 +44,7 @@
     "symfony/event-dispatcher-contracts": "^1.0 || ^2.0 || ^3.0",
     "symfony/http-foundation": "^4.4 || ^5.4 || ^6.0",
     "symfony/http-kernel": "^4.4 || ^5.4 || ^6.0",
-    "symfonyx/jsonrpc-server-sdk": "dev-master"
+    "symfonyx/jsonrpc-server-sdk": "^3.3"
   },
   "require-dev": {
     "behat/behat": "^3.9.0",
